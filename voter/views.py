@@ -4,7 +4,8 @@ from .models import Voter
 # Create your views here.
 
 def home(request):
-    return HttpResponse("<h1>hiyah !</h1>")
+    # return HttpResponse("<h1>hiyah !</h1>")
+    return render(request,"home.html",{})
 
 def view_candidates(request,pk):
     try:
